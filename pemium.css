@@ -1,0 +1,97 @@
+.premium-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5em;
+  }
+  
+  .premium-plans {
+    align-items: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    margin: 3em 0;
+  }
+  
+  .premium-title-container {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .premium-plan {
+    align-items: center;
+    border: 10px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    justify-content: center;
+    padding: 1em;
+    width: 25vw;
+  }
+  
+  .premium-plan-header-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  .premium-plan img {
+    width: 75px;
+  }
+  
+  .premium-header-tier {
+    font-size: 1.5rem;
+  }
+  
+  @media (max-width: 26em) {
+    .premium-plan {
+      width: 6em;
+    }
+  }
+  
+  .premium-plan ul {
+    list-style-type: none;
+  }
+  
+  .premium-plan li {
+    font-size: 1rem;
+    margin-top: 1em;
+    position: relative;
+    padding-left: 1.5em;
+  }
+  
+  .checkmark-perk::before {
+    color: var(--main-color);
+    content: "✓";
+    left: 0;
+    position: absolute;
+  }
+  
+  .x-perk {
+    color: gray;
+  }
+  
+  .x-perk::before {
+    content: "✕";
+    left: 0;
+    position: absolute;
+  }
+  
+  .try-plan-btn {
+    background-color: white;
+    border: 3px solid var(--main-color);
+    color: var(--main-color);
+    font-size: 1.5rem;
+    margin-top: 1em;
+    padding: 0 1em;
+    transition: border 0.25s, color 0.25s;
+    text-decoration: none;
+  }
+  
+  .try-plan-btn:hover {
+    border: 3px solid var(--secondary-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+  }
+  

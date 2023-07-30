@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --main-color: rgb(255, 115, 0);
+  --secondary-color: rgb(255, 165, 0);
+  --success-green: #39db80;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+header {
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 2px 5px gray;
+  display: flex;
+  gap: 5em;
+  justify-content: center;
+  position: fixed;
+  height: 4em;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.crunchyroll-logo {
+  width: 150px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 2em;
+}
+
+.navbar li {
+  list-style-type: none;
+}
+
+.navbar a {
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: color 0.25s;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: var(--main-color);
+}
+
+
+@media (max-width: 37.5em) {
+  header {
+    gap: 2em;
+  }
+
+  .crunchyroll-logo {
+    display: none;
+  }
+}
+
+@media (max-width: 26em) {
+  .navbar ul {
+    gap: 1em;
+  }
+}
+
+
+.hero {
+  align-items: center;
+  background: linear-gradient(rgba(255, 80, 0, 0.7), rgba(255, 80, 0, 0.7)),
+    url(../../imgs/background.jpg) center/cover;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 4em;
+  height: 80vh;
+}
+
+.hero-img-container {
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  position: relative;
+  height: 50em;
+  width: 50em;
+}
+
+.hero-img-container img {
+  position: relative;
+  top: 3em;
+  width: 100%;
+}
+
+.hero-text-container {
+  align-items: center;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+  text-align: center;
+}
+
+.title {
+  font-size: 5rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+}
+
+.premium-btn {
+  border: 3px solid white;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5em 1em;
+  transition: color 0.25s, border 0.25s;
+  text-decoration: none;
+}
+
+.premium-btn:hover {
+  border: 3px solid black;
+  color: black;
+}
+
+
+@media (max-width: 73em) {
+  .hero {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .hero-img-container {
+    display: none;
+  }
+}
+
+@media (max-width: 26em) {
+  .title {
+    font-size: 3.25rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+
+.sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: space-around;
+  margin-top: 2em;
+}
+
+@media (max-width: 18.75em) {
+  .sponsors img {
+    width: 250px;
+  }
+}
+
+
+footer {
+  display: flex;
+  font-size: 1.25rem;
+  gap: 2em;
+  justify-content: center;
+  padding: 2em;
+}
+
+footer a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
